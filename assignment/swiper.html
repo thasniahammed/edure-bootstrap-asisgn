@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hero Section Example</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Discover amazing content and services.</p>
+            <a href="#learn-more" class="cta-button">Learn More</a>
+        </div>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/images/clients/client-1.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/images/clients/client-2.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/images/clients/client-4.png" class="img-fluid" alt=""></div>
+          <!-- Add more slides as needed -->
+        </div>
+      
+        <!-- Add pagination and navigation elements (optional) -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- Include Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Include Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <script>
+        var mySwiper = new Swiper('.swiper-container', {
+          // Optional parameters
+          loop: true, // Enable continuous loop
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+         
+</body>
+</html>
