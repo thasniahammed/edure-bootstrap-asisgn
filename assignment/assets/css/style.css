@@ -198,12 +198,24 @@ h1 {
   transform: skewY(-3deg);
   color: #fff;
 }
-/* .skewed:before {
+/*---Section csss---*/
+.skewed-bg {
+  padding: 120px 0;
+  color: #fff;
+  transform: skewY(0deg);
+}
+
+.skewed-bg:before {
   content: "";
   background: #1b1b1b;
   position: absolute;
- transform: skewY(-3deg);
-} */
+  bottom: 60px;
+  top: 60px;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
